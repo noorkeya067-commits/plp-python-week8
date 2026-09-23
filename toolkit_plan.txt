@@ -1,0 +1,51 @@
+PERSONAL MINI-TOOLKIT PLAN
+
+Project Name:
+Personal Mini-Toolkit
+
+Purpose:
+Create a simple Python program containing useful tools that a user can
+choose from through a menu.
+
+Tools:
+1. Calculator
+   - Ask the user for two numbers.
+   - Allow addition, subtraction, multiplication, and division.
+   - Display the result clearly.
+
+2. To-Do List
+   - Use a list to store tasks.
+   - Allow the user to add tasks.
+   - Display the current tasks.
+
+3. Number Checker
+   - Ask the user for a number.
+   - Check whether the number is even or odd.
+   - Display the result.
+
+Menu:
+The program will display a menu with the available tools and a quit option.
+The menu will repeat until the user chooses to quit.
+
+Program Flow:
+1. Display a friendly welcome message.
+2. Display the main menu.
+3. Ask the user to choose a tool.
+4. Use if/elif/else to route the choice.
+5. Run the selected tool.
+6. Return to the menu after the tool finishes.
+7. Quit when the user selects the quit option.
+
+Data:
+A list will be used for the to-do tasks because the list needs to change
+while the program is running.
+
+Code Quality:
+- Use clear variable names.
+- Add comments to explain important parts of the program.
+- Give the user friendly instructions and output.
+- Handle invalid menu choices without crashing.
+
+Expected Result:
+The user can choose and use at least three different tools and can continue
+using the toolkit until choosing the quit option.
