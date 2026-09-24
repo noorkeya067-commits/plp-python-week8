@@ -5,6 +5,7 @@
 tasks = []
 
 
+# Calculator: performs addition, subtraction, multiplication, or division.
 def calculator():
     """Perform a basic calculation."""
     print("\n--- Calculator ---")
@@ -43,6 +44,7 @@ def calculator():
         print("Please enter valid numbers.")
 
 
+# To-Do List: lets the user add and view tasks stored in a list.
 def todo_list():
     """Add and display tasks."""
     print("\n--- To-Do List ---")
@@ -64,6 +66,7 @@ def todo_list():
         print("No tasks yet.")
 
 
+# Number Checker: determines whether a whole number is even or odd.
 def number_checker():
     """Check whether a number is even or odd."""
     print("\n--- Number Checker ---")
@@ -80,6 +83,7 @@ def number_checker():
         print("Please enter a valid whole number.")
 
 
+# Display the main menu.
 def show_menu():
     """Display the main menu."""
     print("\n========== PERSONAL MINI-TOOLKIT ==========")
@@ -109,3 +113,9 @@ while True:
         break
     else:
         print("Invalid choice. Please choose a number from 1 to 4.")
+
+
+
+
+
+
