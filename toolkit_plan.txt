@@ -13,10 +13,12 @@ Tools:
    - Allow addition, subtraction, multiplication, and division.
    - Display the result clearly.
 
-2. To-Do List
+2. 2. To-Do List
    - Use a list to store tasks.
+   - Allow the user to view current tasks.
    - Allow the user to add tasks.
-   - Display the current tasks.
+   - Allow the user to delete a task by its number.
+   - Allow the user to return to the main menu.
 
 3. Number Checker
    - Ask the user for a number.

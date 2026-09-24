@@ -2,7 +2,60 @@
 # A simple program containing useful tools for the user.
 
 # This list stores tasks that the user adds to the to-do list.
-tasks = []
+tasks = []# To-Do List: lets the user view, add, and delete tasks stored in a list.
+def todo_list():
+    """Manage the to-do list."""
+    while True:
+        print("\n--- To-Do List ---")
+        print("1. View tasks")
+        print("2. Add task")
+        print("3. Delete task")
+        print("4. Back to main menu")
+
+        choice = input("Choose an option (1-4): ")
+
+        if choice == "1":
+            if tasks:
+                print("\nCurrent tasks:")
+                for number, item in enumerate(tasks, start=1):
+                    print(f"{number}. {item}")
+            else:
+                print("No tasks yet.")
+
+        elif choice == "2":
+            task = input("Enter a task to add: ")
+
+            if task.strip():
+                tasks.append(task)
+                print(f"Task added: {task}")
+            else:
+                print("You entered an empty task.")
+
+        elif choice == "3":
+            if tasks:
+                print("\nCurrent tasks:")
+                for number, item in enumerate(tasks, start=1):
+                    print(f"{number}. {item}")
+
+                try:
+                    task_number = int(input("Enter the task number to delete: "))
+
+                    if 1 <= task_number <= len(tasks):
+                        removed_task = tasks.pop(task_number - 1)
+                        print(f"Task deleted: {removed_task}")
+                    else:
+                        print("Invalid task number.")
+                except ValueError:
+                    print("Please enter a valid task number.")
+            else:
+                print("No tasks to delete.")
+
+        elif choice == "4":
+            print("Returning to the main menu.")
+            break
+
+        else:
+            print("Invalid choice. Please choose a number from 1 to 4.")
 
 
 # Calculator: performs addition, subtraction, multiplication, or division.
@@ -44,26 +97,7 @@ def calculator():
         print("Please enter valid numbers.")
 
 
-# To-Do List: lets the user add and view tasks stored in a list.
-def todo_list():
-    """Add and display tasks."""
-    print("\n--- To-Do List ---")
 
-    task = input("Enter a task to add: ")
-
-    if task.strip():
-        tasks.append(task)
-        print(f"Task added: {task}")
-    else:
-        print("You entered an empty task.")
-
-    print("\nCurrent tasks:")
-
-    if tasks:
-        for number, item in enumerate(tasks, start=1):
-            print(f"{number}. {item}")
-    else:
-        print("No tasks yet.")
 
 
 # Number Checker: determines whether a whole number is even or odd.
